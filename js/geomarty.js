@@ -131,3 +131,27 @@ conver4Meter.innerText= parseFloat((rhombusOutputTotal/10).toFixed(2));
 const conver5Meter= document.getElementById('convert5-meter');
 conver5Meter.innerText= parseFloat((pentagonOutputTotal/10).toFixed(2));
      })
+/*---------------------------Ellipse part----------------------------*/ 
+document.getElementById('btn-ellipse').addEventListener('click', function(){
+    const ellipseField_1= document.getElementById('ellipse-field-1');
+    const ellipseFieldOne= parseFloat(ellipseField_1.value);
+    ellipseField_1.value='';
+
+    const ellipseField_2= document.getElementById('ellipse-field-2');
+    const ellipseFieldTwo= parseFloat(ellipseField_2.value);
+    ellipseField_2.value='';
+
+    const ellipseCalculation= parseFloat((3.1416 * ellipseFieldOne * ellipseFieldTwo).toFixed(2));
+    // get id and set output
+    const ellipseOutput= document.getElementById('ellipse-output');
+    ellipseOutput.innerText= ellipseCalculation;
+})
+
+ // convert to meter
+ document.getElementById('btn-ell-convert').addEventListener('click', function(){
+    const ellipseOutput= document.getElementById('ellipse-output');
+   const ellipseOutputTotal= ellipseOutput.innerText;
+//    get id and set output
+const conver6Meter= document.getElementById('convert6-meter');
+conver6Meter.innerText= parseFloat((ellipseOutputTotal/10).toFixed(2));
+ })
