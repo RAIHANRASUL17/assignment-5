@@ -18,221 +18,286 @@
     <header>
         <nav class="navbar bg-info-subtle opacity-75 rounded-3">
             <div class="container-fluid">
-              <a class="navbar-brand"><span class="fs-2 fw-semibold">Interactive</span> <br> 
-                Geometry Genius</a>
-              <form class="d-flex" role="search">
-                <button class="btn bg-primary text-white py-2 px-5 fs-4 fw-semibold" type="submit">Blog</button>
-              </form>
+                <a class="navbar-brand"><span class="fs-2 fw-semibold">Interactive</span> <br>
+                    Geometry Genius</a>
+                <form class="d-flex" role="search">
+                    <button class="btn bg-primary text-white py-2 px-5 fs-4 fw-semibold" type="submit">Blog</button>
+                </form>
             </div>
-          </nav>
+        </nav>
     </header>
     <!-- ----------------------header End-------------- -->
-<main class="container-fluid my-5 py-5">
-    <div class="row row-cols-1 row-cols-md-4 g-4">
-        <!------------------------ card-1 start --------------------------->
-        <div class="col">
-            <div class="card w-100 h-100 shadow-lg p-3 mb-3 bg-body-tertiary rounded ">
-                <img src="images/triangle.png" class="card-img-top w-100 h-50 p-4" alt="...">
-                <div class="card-body">
-                    <div class="text-center my-2">
-                        <h5 class="">Triangle</h5>
-                        <h5 class="mb-3 my-3">Area(A)=0.5*b*h</h5>
-                    </div>
-                    <!-- input -->
-                    <div class="row mb-4 container mx-auto">
-                        <div class="col-sm-5 d-flex justify-content-around">
-                            <input type="text" class="form-control col-sm-5 ms-5 me-2 ps-5" id="save">
-                            <h4 class=" fw-bolder me-5 ">cm</h4>
+    <main class="container-fluid my-5 py-5">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <!------------------------ card-1 start --------------------------->
+            <div class="col">
+                <div class="card w-100 h-100 shadow-lg p-3 mb-3 bg-body-tertiary rounded ">
+                    <img src="images/triangle.png" class="card-img-top w-100 h-50 p-4" alt="...">
+                    <div class="card-body">
+                        <div class="text-center my-2">
+                            <h5 class="fs-2">Triangle</h5>
+                            <h5 class="mb-3 my-3">Area(A)=0.5*b*h</h5>
                         </div>
-                        <div class="col-sm-5 d-flex justify-content-around">
-                            <input type="text" class="form-control col-sm-5 ms-5 me-2" id="save">
-                            <h4 class=" fw-bolder">cm</h4>
+                        <!-- input -->
+                        <div class="row mb-4 container mx-auto">
+                            <div class="col-sm-5 d-flex justify-content-around ms-3">
+                                <input id="triangle-field-1" type="text" class="form-control col-sm-5" placeholder="b">
+                                <h4 class=" fw-bolder me-5 ">cm</h4>
+                            </div>
+                            <div class="col-sm-5 d-flex justify-content-around">
+                                <input id="triangle-field-2" type="text" placeholder="h" class="form-control col-sm-5">
+                                <h4 class=" fw-bolder">cm</h4>
+                            </div>
                         </div>
+                        <!-- input -->
+                        <!-- calculate btn -->
+                        <div class="my-2 row justify-content">
+                            <button id="btn-triangle" class="btn btn-lg btn-primary fw-bold">Calculate</button>
+                        </div>
+                        <!-- calculate btn -->
                     </div>
-                    <!-- input -->
-                    <!-- calculate btn -->
-                    <div class="my-2 row justify-content">
-                        <button id="calculate-btn" class="btn btn-lg btn-primary fw-bold">Calculate</button>
-                    </div>
-                    <!-- calculate btn -->
                 </div>
             </div>
-        </div>
-        <!--------------------------- card-1 End ------------------------  -->
+            <!--------------------------- card-1 End ------------------------  -->
 
-        <!------------------------ card-2 start --------------------------->
-        <div class="col">
-            <div class="card w-100 h-100 shadow-lg p-3 mb-3 bg-body-tertiary rounded ">
-                <img src="images/rectangle.png" class="card-img-top w-100 h-50 p-4" alt="...">
-                <div class="card-body">
-                    <div class="text-center my-2">
-                        <h5 class="">Rectangle</h5>
-                        <h5 class="mb-3 my-3">Area(A)=W*I</h5>
-                    </div>
-                    <!-- input -->
-                    <div class="row mb-4 container mx-auto">
-                        <div class="col-sm-5 d-flex justify-content-around">
-                            <input type="text" class="form-control col-sm-5 ms-5 me-2 ps-5" id="save">
-                            <h4 class=" fw-bolder me-5 ">cm</h4>
+            <!------------------------ card-2 start --------------------------->
+            <div class="col">
+                <div class="card w-100 h-100 shadow-lg p-3 mb-3 bg-body-tertiary rounded ">
+                    <img src="images/rectangle.png" class="card-img-top w-100 h-50 p-4" alt="...">
+                    <div class="card-body">
+                        <div class="text-center my-2">
+                            <h5 class="fs-2">Rectangle</h5>
+                            <h5 class="mb-3 my-3">Area(A)=W*I</h5>
                         </div>
-                        <div class="col-sm-5 d-flex justify-content-around">
-                            <input type="text" class="form-control col-sm-5 ms-5 me-2" id="save">
-                            <h4 class=" fw-bolder">cm</h4>
+                        <!-- input -->
+                        <div class="row mb-4 container mx-auto">
+                            <div class="col-sm-5 d-flex justify-content-around ms-3">
+                                <input id="rectangle-field-1" type="text" class="form-control col-sm-5" placeholder="W">
+                                <h4 class=" fw-bolder me-5 ">cm</h4>
+                            </div>
+                            <div class="col-sm-5 d-flex justify-content-around ms-3">
+                                <input id="rectangle-field-2" type="text" class="form-control col-sm-5" placeholder="I">
+                                <h4 class=" fw-bolder">cm</h4>
+                            </div>
                         </div>
+                        <!-- input -->
+                        <!-- calculate btn -->
+                        <div class="my-2 row justify-content">
+                            <button id="btn-rectangle" class="btn btn-lg btn-primary fw-bold">Calculate</button>
+                        </div>
+                        <!-- calculate btn -->
                     </div>
-                    <!-- input -->
-                    <!-- calculate btn -->
-                    <div class="my-2 row justify-content">
-                        <button id="calculate-btn" class="btn btn-lg btn-primary fw-bold">Calculate</button>
-                    </div>
-                    <!-- calculate btn -->
                 </div>
             </div>
-        </div>
-        <!--------------------------- card-2 End ------------------------  -->
+            <!--------------------------- card-2 End ------------------------  -->
 
-        <!------------------------ card-3 start --------------------------->
-        <div class="col">
-            <div class="card w-100 h-100 shadow-lg p-3 mb-3 bg-body-tertiary rounded ">
-                <img src="images/parallelogram.png" class="card-img-top w-100 h-50 p-4" alt="...">
-                <div class="card-body">
-                    <div class="text-center my-2">
-                        <h5 class="">Parallelogram</h5>
-                        <h5 class="mb-3 my-3">Area(A)=b*h</h5>
-                    </div>
-                    <!-- input -->
-                    <div class="row mb-4 container mx-auto">
-                        <div class="col-sm-5 d-flex justify-content-around">
-                            <input type="text" class="form-control col-sm-5 ms-5 me-2 ps-5" id="save">
-                            <h4 class=" fw-bolder me-5 ">cm</h4>
+            <!------------------------ card-3 start --------------------------->
+            <div class="col">
+                <div class="card w-100 h-100 shadow-lg p-3 mb-3 bg-body-tertiary rounded ">
+                    <img src="images/parallelogram.png" class="card-img-top w-100 h-50 p-4" alt="...">
+                    <div class="card-body">
+                        <div class="text-center my-2">
+                            <h5 class="fs-2">Parallelogram</h5>
+                            <h5 class="mb-3 my-3">Area(A)=b*h</h5>
                         </div>
-                        <div class="col-sm-5 d-flex justify-content-around">
-                            <input type="text" class="form-control col-sm-5 ms-5 me-2" id="save">
-                            <h4 class=" fw-bolder">cm</h4>
+                        <!-- input -->
+                        <div class="row mb-4 container mx-auto">
+                            <div class="col-sm-5 d-flex justify-content-around ms-3">
+                                <input id="parallelogram-field-1" type="text" class="form-control col-sm-5" placeholder="p">
+                                <h4 class=" fw-bolder me-5 ">cm</h4>
+                            </div>
+                            <div class="col-sm-5 d-flex justify-content-around ms-3">
+                                <input id="parallelogram-field-2" type="text" class="form-control col-sm-5" placeholder="b">
+                                <h4 class=" fw-bolder">cm</h4>
+                            </div>
                         </div>
+                        <!-- input -->
+                        <!-- calculate btn -->
+                        <div class="my-2 row justify-content">
+                            <button id="btn-parallelogram" class="btn btn-lg btn-primary fw-bold">Calculate</button>
+                        </div>
+                        <!-- calculate btn -->
                     </div>
-                    <!-- input -->
-                    <!-- calculate btn -->
-                    <div class="my-2 row justify-content">
-                        <button id="calculate-btn" class="btn btn-lg btn-primary fw-bold">Calculate</button>
-                    </div>
-                    <!-- calculate btn -->
                 </div>
             </div>
-        </div>
-        <!--------------------------- card-3 End ------------------------  -->
+            <!--------------------------- card-3 End ------------------------  -->
 
-        <!----------------- card-4: Calculation start ----------------->
-        <div class="col">
-            <div class="card w-100 h-100 shadow-lg p-3 mb-3 bg-body-tertiary rounded ">
-            <h3>Area Calculation</h3>
-            <h5>1.Triangle: </h5>
-            <h5>2.Rectangle: </h5>
-            <h5>3.Parallelogram: </h5>
-            <h5>4.Rhombus: </h5>
-            <h5>5.Pentagon: </h5>
-            <h5>6.Ellipse: </h5>
-            </div>
-        </div>
-        <!----------------- card-4: Calculation End -------------------  -->
-
-
-        <!------------------------ card-5 start --------------------------->
-        <div class="col">
-            <div class="card w-100 h-100 shadow-lg p-3 mb-3 bg-body-tertiary rounded ">
-                <img src="images/rhombus.png" class="card-img-top w-100 h-50 p-4" alt="...">
-                <div class="card-body">
-                    <div class="text-center my-2">
-                        <h5 class="">Rhombus</h5>
-                        <h5 class="mb-3 my-3">Area(A)=0.5*d1*d2</h5>
-                    </div>
-                    <!-- input -->
-                    <div class="row mb-4 container mx-auto">
-                        <div class="col-sm-5 d-flex justify-content-around">
-                            <input type="text" class="form-control col-sm-5 ms-5 me-2 ps-5" id="save">
-                            <h4 class=" fw-bolder me-5 ">cm</h4>
+            <!----------------- card-4: Calculation start ----------------->
+            <div class="col">
+                <div class="card w-100 h-100 shadow-lg p-3 mb-3 bg-body-tertiary rounded ">
+                    <h3 class="fs-2 my-2">Area Calculation</h3>
+                    <!--  -->
+                    <div>
+                        <div class="d-flex gap-3">
+                            <h5 class="fs-6 my-3">1.Triangle:<span id="triangle-output"></span>cm*cm</h5>
                         </div>
-                        <div class="col-sm-5 d-flex justify-content-around">
-                            <input type="text" class="form-control col-sm-5 ms-5 me-2" id="save">
-                            <h4 class=" fw-bolder">cm</h4>
+                        <div class="d-flex gap-3 align-items-center">
+                            <button id="btn-tri-convert" class="btn btn-lg btn-primary fw-bold">convert-m</button>
+                            <h5 class="fs-6">convert: <span id="convert-meter"></span>m*m</h5>
                         </div>
                     </div>
-                    <!-- input -->
-                    <!-- calculate btn -->
-                    <div class="my-2 row justify-content">
-                        <button id="calculate-btn" class="btn btn-lg btn-primary fw-bold">Calculate</button>
+                    <!--  -->
+
+                    <!--  -->
+                    <div>
+                        <div class="d-flex gap-3">
+                            <h5 class="fs-6 my-3">2.Rectangle: <span id="rectangle-output"></span> cm*cm </h5>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center">
+                            <button id="btn-rec-convert" class="btn btn-lg btn-primary fw-bold">convert-m</button>
+                            <h5 class="fs-6">convert: <span id="convert2-meter"></span>m*m</h5>
+                        </div>
                     </div>
-                    <!-- calculate btn -->
+                    <!--  -->
+
+                    <!--  -->
+                    <div>
+                        <div class="d-flex gap-3">
+                            <h5 class="fs-6 my-3">3.Parallelogram: <span id="parallelogram-output"></span> cm*cm </h5>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center">
+                            <button id="btn-para-convert" class="btn btn-lg btn-primary fw-bold">convert-m</button>
+                            <h5 class="fs-6">convert: <span id="convert3-meter"></span>m*m</h5>
+                        </div>
+                    </div>
+                    <!--  -->
+                    
+                    <!--  -->
+                    <div>
+                        <div class="d-flex gap-3">
+                            <h5 class="fs-6 my-3">4.Rhombus: <span id="rhombus-output"></span> cm*cm </h5>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center">
+                            <button id="btn-tri-convert" class="btn btn-lg btn-primary fw-bold">convert-m</button>
+                            <h5 class="fs-6">convert: <span id="convert-meter"></span>m*m</h5>
+                        </div>
+                    </div>
+                    <!--  -->
+                     <!--  -->
+                     <div>
+                        <div class="d-flex gap-3">
+                            <h5 class="fs-6 my-3">5.Pentagon: <span id="pentagon-output"></span> cm*cm </h5>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center">
+                            <button id="btn-tri-convert" class="btn btn-lg btn-primary fw-bold">convert-m</button>
+                            <h5 class="fs-6">convert: <span id="convert3-meter"></span>m*m</h5>
+                        </div>
+                    </div>
+                    <!--  -->
+                     <!--  -->
+                     <div>
+                        <div class="d-flex gap-3">
+                            <h5 class="fs-6 my-3">6.Ellipse: <span id="ellipse-output"></span> cm*cm </h5>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center">
+                            <button id="btn-tri-convert" class="btn btn-lg btn-primary fw-bold">convert-m</button>
+                            <h5 class="fs-6">convert: <span id="convert-meter"></span>m*m</h5>
+                        </div>
+                    </div>
+                    <!--  -->
                 </div>
             </div>
-        </div>
-        <!--------------------------- card-5 End ------------------------  -->
+            <!----------------- card-4: Calculation End -------------------  -->
 
 
-        <!------------------------ card-6 start --------------------------->
-        <div class="col">
-            <div class="card w-100 h-100 shadow-lg p-3 mb-3 bg-body-tertiary rounded ">
-                <img src="images/pentagon.png" class="card-img-top w-100 h-50 p-4" alt="...">
-                <div class="card-body">
-                    <div class="text-center my-2">
-                        <h5 class="">Pentagon</h5>
-                        <h5 class="mb-3 my-3">Area(A)=0.5*p*b</h5>
-                    </div>
-                    <!-- input -->
-                    <div class="row mb-4 container mx-auto">
-                        <div class="col-sm-5 d-flex justify-content-around">
-                            <input type="text" class="form-control col-sm-5 ms-5 me-2 ps-5" id="save">
-                            <h4 class=" fw-bolder me-5 ">cm</h4>
+            <!------------------------ card-5 start --------------------------->
+            <div class="col">
+                <div class="card w-100 h-100 shadow-lg p-3 mb-3 bg-body-tertiary rounded ">
+                    <img src="images/rhombus.png" class="card-img-top w-100 h-50 p-4" alt="...">
+                    <div class="card-body">
+                        <div class="text-center my-2">
+                            <h5 class="fs-2">Rhombus</h5>
+                            <h5 class="mb-3 my-3">Area(A)=0.5*d1*d2</h5>
                         </div>
-                        <div class="col-sm-5 d-flex justify-content-around">
-                            <input type="text" class="form-control col-sm-5 ms-5 me-2" id="save">
-                            <h4 class=" fw-bolder">cm</h4>
+                        <!-- input -->
+                        <div class="row mb-4 container mx-auto">
+                            <div class="col-sm-5 d-flex justify-content-around ms-3">
+                                <input type="text" class="form-control col-sm-5" placeholder="W">
+                                <h4 class=" fw-bolder me-5 ">cm</h4>
+                            </div>
+                            <div class="col-sm-5 d-flex justify-content-around ms-3">
+                                <input type="text" class="form-control col-sm-5" placeholder="I">
+                                <h4 class=" fw-bolder">cm</h4>
+                            </div>
                         </div>
+                        <!-- input -->
+                        <!-- calculate btn -->
+                        <div class="my-2 row justify-content">
+                            <button id="calculate-btn" class="btn btn-lg btn-primary fw-bold">Calculate</button>
+                        </div>
+                        <!-- calculate btn -->
                     </div>
-                    <!-- input -->
-                    <!-- calculate btn -->
-                    <div class="my-2 row justify-content">
-                        <button id="calculate-btn" class="btn btn-lg btn-primary fw-bold">Calculate</button>
-                    </div>
-                    <!-- calculate btn -->
                 </div>
             </div>
-        </div>
-        <!--------------------------- card-6 End ------------------------  -->
+            <!--------------------------- card-5 End ------------------------  -->
 
 
-        <!------------------------ card-7 start --------------------------->
-        <div class="col">
-            <div class="card w-100 h-100 shadow-lg p-3 mb-3 bg-body-tertiary rounded ">
-                <img src="images/ellipse.png" class="card-img-top w-100 h-50 p-4" alt="...">
-                <div class="card-body">
-                    <div class="text-center my-2">
-                        <h5 class="">Ellipse</h5>
-                        <h5 class="mb-3 my-3">Area(A)=3.1416*a*b</h5>
-                    </div>
-                    <!-- input -->
-                    <div class="row mb-4 container mx-auto">
-                        <div class="col-sm-5 d-flex justify-content-around">
-                            <input type="text" class="form-control col-sm-5 ms-5 me-2 ps-5" id="save">
-                            <h4 class=" fw-bolder me-5 ">cm</h4>
+            <!------------------------ card-6 start --------------------------->
+            <div class="col">
+                <div class="card w-100 h-100 shadow-lg p-3 mb-3 bg-body-tertiary rounded ">
+                    <img src="images/pentagon.png" class="card-img-top w-100 h-50 p-4" alt="...">
+                    <div class="card-body">
+                        <div class="text-center my-2">
+                            <h5 class="fs-2">Pentagon</h5>
+                            <h5 class="mb-3 my-3">Area(A)=0.5*p*b</h5>
                         </div>
-                        <div class="col-sm-5 d-flex justify-content-around">
-                            <input type="text" class="form-control col-sm-5 ms-5 me-2" id="save">
-                            <h4 class=" fw-bolder">cm</h4>
+                        <!-- input -->
+                        <div class="row mb-4 container mx-auto">
+                            <div class="col-sm-5 d-flex justify-content-around ms-3">
+                                <input type="text" class="form-control col-sm-5" placeholder="W">
+                                <h4 class=" fw-bolder me-5 ">cm</h4>
+                            </div>
+                            <div class="col-sm-5 d-flex justify-content-around ms-3">
+                                <input type="text" class="form-control col-sm-5" placeholder="I">
+                                <h4 class=" fw-bolder">cm</h4>
+                            </div>
                         </div>
+                        <!-- input -->
+                        <!-- calculate btn -->
+                        <div class="my-2 row justify-content">
+                            <button id="calculate-btn" class="btn btn-lg btn-primary fw-bold">Calculate</button>
+                        </div>
+                        <!-- calculate btn -->
                     </div>
-                    <!-- input -->
-                    <!-- calculate btn -->
-                    <div class="my-2 row justify-content">
-                        <button id="calculate-btn" class="btn btn-lg btn-primary fw-bold">Calculate</button>
-                    </div>
-                    <!-- calculate btn -->
                 </div>
             </div>
+            <!--------------------------- card-6 End ------------------------  -->
+
+
+            <!------------------------ card-7 start --------------------------->
+            <div class="col">
+                <div class="card w-100 h-100 shadow-lg p-3 mb-3 bg-body-tertiary rounded ">
+                    <img src="images/ellipse.png" class="card-img-top w-100 h-50 p-4" alt="...">
+                    <div class="card-body">
+                        <div class="text-center my-2">
+                            <h5 class="fs-2">Ellipse</h5>
+                            <h5 class="mb-3 my-3">Area(A)=3.1416*a*b</h5>
+                        </div>
+                        <!-- input -->
+                        <div class="row mb-4 container mx-auto">
+                            <div class="col-sm-5 d-flex justify-content-around ms-3">
+                                <input type="text" class="form-control col-sm-5" placeholder="W">
+                                <h4 class=" fw-bolder me-5 ">cm</h4>
+                            </div>
+                            <div class="col-sm-5 d-flex justify-content-around ms-3">
+                                <input type="text" class="form-control col-sm-5" placeholder="I">
+                                <h4 class=" fw-bolder">cm</h4>
+                            </div>
+                        </div>
+                        <!-- input -->
+                        <!-- calculate btn -->
+                        <div class="my-2 row justify-content">
+                            <button id="calculate-btn" class="btn btn-lg btn-primary fw-bold">Calculate</button>
+                        </div>
+                        <!-- calculate btn -->
+                    </div>
+                </div>
+            </div>
+            <!--------------------------- card-7 End ------------------------  -->
         </div>
-        <!--------------------------- card-7 End ------------------------  -->
-    </div>
-</main>
+    </main>
+    <!-- js file link -->
+    <script src="js/geomarty.js"></script>
 </body>
 
 </html>
