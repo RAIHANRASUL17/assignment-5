@@ -83,4 +83,51 @@ document.getElementById('btn-tri-convert').addEventListener('click', function(){
     })
 
      /*---------------------------Rhombus part----------------------------*/ 
-     
+     document.getElementById('btn-rhombus').addEventListener('click', function(){
+        const rhombusField_1= document.getElementById('rhombus-field-1');
+        const rhombusFieldOne= parseFloat(rhombusField_1.value);
+        rhombusField_1.value= '';
+
+        const rhombusField_2= document.getElementById('rhombus-field-2');
+        const rhombusFieldTwo= parseFloat(rhombusField_2.value);
+        rhombusField_2.value= '';
+
+        const rhombusCalculation= 0.5 * rhombusFieldOne * rhombusFieldTwo;
+        
+        // get id and set output
+        const rhombusOutput= document.getElementById('rhombus-output');
+        rhombusOutput.innerText= rhombusCalculation;
+     })
+
+// convert to meter
+     document.getElementById('btn-rho-convert').addEventListener('click', function(){
+        const rhombusOutput= document.getElementById('rhombus-output');
+       const rhombusOutputTotal= rhombusOutput.innerText;
+    //    get id and set output
+const conver4Meter= document.getElementById('convert4-meter');
+conver4Meter.innerText= parseFloat((rhombusOutputTotal/10).toFixed(2));
+     })
+
+    /*---------------------------Pentagon part----------------------------*/ 
+     document.getElementById('btn-pentagon').addEventListener('click', function(){
+        const pentagonField_1= document.getElementById('pentagon-field-1');
+    const pentagonFieldOne= parseFloat(pentagonField_1.value);
+    pentagonField_1.value= '';
+
+    const pentagonField_2= document.getElementById('pentagon-field-2');
+    const pentagonFieldTwo= parseFloat(pentagonField_2.value);
+    pentagonField_2.value= '';
+
+    const pentagonCalculation= 0.5 * pentagonFieldOne * pentagonFieldTwo;
+    // get id and set output
+    const pentagonOutput= document.getElementById('pentagon-output');
+    pentagonOutput.innerText= pentagonCalculation;
+     })
+    // convert to meter
+    document.getElementById('btn-pen-convert').addEventListener('click', function(){
+        const pentagonOutput= document.getElementById('pentagon-output');
+       const pentagonOutputTotal= pentagonOutput.innerText;
+    //    get id and set output
+const conver5Meter= document.getElementById('convert5-meter');
+conver5Meter.innerText= parseFloat((pentagonOutputTotal/10).toFixed(2));
+     })
